@@ -15,6 +15,7 @@ namespace ReceiptProcessorAPI.Controllers
             _receiptService = receiptService;
         }
 
+        //Api to store the recipt into the local storage
         [HttpPost("process")]
         public IActionResult ProcessReceipt([FromBody] Receipt receipt)
         {
@@ -26,7 +27,7 @@ namespace ReceiptProcessorAPI.Controllers
             string id = _receiptService.SaveReceipt(receipt);
             return Ok(new { id });
         }
-
+        //Api to get points for given id
         [HttpGet("{id}/points")]
         public IActionResult GetPoints(string id)
         {

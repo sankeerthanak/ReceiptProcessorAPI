@@ -7,14 +7,14 @@ namespace ReceiptProcessorAPI.Services
     public class ReceiptService
     {
         private static readonly Dictionary<string, Receipt> receipts = new();
-
+        //save receipt into local storage
         public string SaveReceipt(Receipt receipt)
         {
             string id = Guid.NewGuid().ToString();
             receipts[id] = receipt;
             return id;
         }
-
+        //get points for the given retailer id
         public int GetPoints(string id)
         {
             if (!receipts.ContainsKey(id))
