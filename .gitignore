@@ -1,0 +1,36 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore dependencies
+.vs/
+.vscode/
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+# Ignore compiled DLLs & packages
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+*.csproj.user
+*.cache
+*.pyc
+*.pyo
+.DS_Store
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore user-specific VS Code settings
+.vscode/
+
+# Ignore node_modules (if applicable)
+node_modules/
+
+# Ignore generated files
+*.generated.cs
