@@ -16,7 +16,7 @@ git clone https://github.com/sankeerthanak/ReceiptProcessorAPI.git
 cd ReceiptProcessorAPI
 
 2. Running with Docker
-docker build -t receipt-processor-api
+docker build -t receipt-processor-api .
 docker run -d -p 5000:80 --name receipt-api receipt-processor-api
 
 Swagger UI:
